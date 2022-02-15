@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body{
+  background-color: #121212;
   min-height: 100vh;
+  font-size: 100%;
+  font-family: 'Outfit', sans-serif;
+}
+
+.acronym{
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 35px;
+}
+
+.acronym-color{
+  color: aqua;
+}
+
+.App {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 45px;
+  color: #fff;
+}
+
+.coin-search {
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.coin-input {
+  width: 700px;
+  height: 45px;
+  background-color: transparent;
+  border-color: #121212;
+  border-radius: 30px;
+  font-size: 16px;
+  padding-left: 25px;
+  box-shadow:  -12px -12px 12px 0 rgba(0,0,0,.2),
+  12px 12px 12px 0 rgba(0,0,0,.2);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.coin-input::placeholder {
+  color: gray;
+}
+
+
+@media screen and (max-width: 940px) {
+  h1 {
+    font-size: 2.5rem;
   }
-  to {
-    transform: rotate(360deg);
+  h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 495px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
   }
 }
